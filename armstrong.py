@@ -23,12 +23,14 @@ def main ():
         if total_cube == n:
             if num == n:
                 print('The given number {} is itself an armstrong number for the power 3.'.format(n))
+                break
 
             else:
                 print('The next armstrong number of {} is {} for power 3'.format(num, n))
+                break
         else:
             n += 1
-        fchoice()
+    fchoice()
 def fchoice():
     print()
     choice = input('Would you like to find the wrmstrong of another number(y/n): ')
